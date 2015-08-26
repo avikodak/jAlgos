@@ -1,12 +1,11 @@
-package avikodak.sites.hackerrank;
-
-/**
+/****************************************************************************************************************************************************
  * File Name           : FibonacciModified.java
  * Author              : AVINASH
  * Testing Status      : Tested
  * URL                 : https://www.hackerrank.com/challenges/fibonacci-modified
- */
-	
+ ***************************************************************************************************************************************************/
+
+package avikodak.sites.hackerrank;
 
 import java.math.BigInteger;
 import java.util.Scanner;
