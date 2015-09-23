@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /****************************************************************************************************************************************************
@@ -9,18 +8,22 @@ import java.util.Scanner;
 
 public class Main {
 	
-	private static void printNoWords(String userInput){
-		System.out.println(userInput.split(" ").length);
+	public static void calculateFactorial(BigInteger userInput){
+		BigInteger result = BigInteger.ONE;
+		while(userInput.compareTo(BigInteger.ONE) != 0){
+			result = result.multiply(userInput);
+			userInput = userInput.subtract(BigInteger.ONE);
+		}
+		System.out.println(result);
 	}
-	
-	public static void main(String[] args){
+
+	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		Integer testCases = in.nextInt();
 		String userInput;
-		userInput = in.nextLine();
 		while(testCases-- > 0){
-			userInput = in.nextLine();
-			printNoWords(userInput);
+			userInput = in.next();
+			calculateFactorial(new BigInteger(userInput));
 		}
 		in.close();
 	}
