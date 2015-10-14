@@ -1,14 +1,21 @@
+/****************************************************************************************************************************************************
+ *  File Name                   : CLNFORUM.java
+ *  Created on                  : 14-Oct-2015 :: 10:35:13 pm
+ *  Author                      : avikodak
+ *  Testing Status              : Tested
+ *  URL                         : https://www.codechef.com/problems/CLNFORUM
+ ****************************************************************************************************************************************************/
+
+package avikodak.sites.codechef.peer;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-/****************************************************************************************************************************************************
- *  File Name                   : Main.java
- *  Author                      : avikodak
- ****************************************************************************************************************************************************/
-
-public class Main {
+//Tested
+public class CLNFORUM {
 	
+	//Tested
 	public static void correctSentence(String userInput){
 		String words[] = userInput.split(" ");
 		Map<String,String> oldNew = new HashMap<String, String>();
@@ -30,6 +37,7 @@ public class Main {
 		System.out.println("");
 	}
 	
+	//Tested
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Integer testCases = scanner.nextInt();
@@ -40,5 +48,5 @@ public class Main {
 		}
 		scanner.close();
 	}
-	
+
 }
