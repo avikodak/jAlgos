@@ -1,14 +1,19 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
 /****************************************************************************************************************************************************
- *  File Name                   : Main.java
+ *  File Name                   : NF03.java
+ *  Created on                  : 17-Oct-2015 :: 9:31:43 pm
  *  Author                      : avikodak
+ *  Testing Status              : Tested
+ *  URL                         : https://www.codechef.com/problems/NF03
  ****************************************************************************************************************************************************/
 
-public class Main {
-	
+package avikodak.sites.codechef.peer;
+
+import java.util.Scanner;
+
+//Tested
+public class NF03 {
+
+	//Tested
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String userInput = input.nextLine();
