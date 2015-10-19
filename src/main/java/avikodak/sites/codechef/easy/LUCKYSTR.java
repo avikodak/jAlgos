@@ -1,13 +1,20 @@
+/****************************************************************************************************************************************************
+ *  File Name                   : LUCKYSTR.java
+ *  Created on                  : 19-Oct-2015 :: 2:47:22 pm
+ *  Author                      : avikodak
+ *  Testing Status              : Tested
+ *  URL                         : https://www.codechef.com/problems/LUCKYSTR
+ ****************************************************************************************************************************************************/
+
+package avikodak.sites.codechef.easy;
+
 import java.util.Scanner;
 import java.util.Vector;
 
-/****************************************************************************************************************************************************
- *  File Name                   : Main.java
- *  Author                      : avikodak
- ****************************************************************************************************************************************************/
+//Tested
+public class LUCKYSTR {
 
-public class Main {
-	
+	//Tested
 	public static void main(String[] args) {
 		Scanner inputScanner = new Scanner(System.in);
 		Vector<String> favoriteStrings = new Vector<String>();
