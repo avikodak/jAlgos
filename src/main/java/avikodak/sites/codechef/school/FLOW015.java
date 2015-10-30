@@ -1,13 +1,21 @@
+/****************************************************************************************************************************************************
+ *  File Name                   : LUCKYSTR.java
+ *  Created on                  : 30-Oct-2015 :: 7:49:22 pm
+ *  Author                      : avikodak
+ *  Testing Status              : Tested
+ *  URL                         : https://www.codechef.com/problems/FLOW015
+ ****************************************************************************************************************************************************/
+
+
+package avikodak.sites.codechef.school;
+
 import java.util.Calendar;
 import java.util.Scanner;
 
-/****************************************************************************************************************************************************
- *  File Name                   : Main.java
- *  Author                      : avikodak
- ****************************************************************************************************************************************************/
+//Tested
+public class FLOW015 {
 
-public class Main {
-
+	//Tested
 	public static void main(String[] args) {
 		String day[] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};
 		Scanner scanner = new Scanner(System.in);
