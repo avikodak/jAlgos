@@ -1,5 +1,6 @@
-import java.util.Calendar;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /****************************************************************************************************************************************************
  *  File Name                   : Main.java
@@ -9,19 +10,29 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		String day[] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};
-		Scanner scanner = new Scanner(System.in);
-		Integer testCases,year;
-		testCases = scanner.nextInt();
-		Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.MONTH, 0);
-		calendar.set(Calendar.DAY_OF_MONTH, 1);
-		while(testCases-- > 0){
-			year = scanner.nextInt();
-			calendar.set(Calendar.YEAR, year);
-			System.out.println(day[calendar.get(Calendar.DAY_OF_WEEK)-1]);
+		BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			String s = bufferRead.readLine();
+			String[] tokens = s.split(" ");
+			Boolean areAllLettersInCapital;
+			int totalAcronyms = 0;
+			for (String word : tokens) {
+				if(word.length() > 1) {
+					areAllLettersInCapital = true;
+					for (int counter = 0; counter < word.length(); counter++) {
+						if (word.charAt(counter) >= 'a' && word.charAt(counter) <= 'z') {
+							areAllLettersInCapital = false;
+						}
+					}
+					if(areAllLettersInCapital){
+						totalAcronyms++;
+					}
+				}
+			}
+			System.out.println(totalAcronyms);
+		} catch (IOException e) {
 		}
-		scanner.close();
+
 	}
 
 }
