@@ -11,8 +11,10 @@ import java.util.Scanner;
 
 package avikodak.sites.geeksforgeeks.practice.basic;
 
+//Tested
 public class PRINTKTHDIGIT {
 
+	//Tested
 	private static void findKthDigit(String firstInput, String secondInput, String kthValue) {
 		BigInteger firstInputInBI = new BigInteger(firstInput);
 		Integer secondInputInBI = Integer.parseInt(secondInput);
@@ -20,7 +22,8 @@ public class PRINTKTHDIGIT {
 		int size = firstInputInBI.toString().length();
 		System.out.println(firstInputInBI.toString().charAt(size - Integer.parseInt(kthValue)));
 	}
-
+	
+	//Tested
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		Integer testCases = in.nextInt();
